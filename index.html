@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="main.css" />
+
+		<title>Prtfolio</title>
+	</head>
+	<body>
+		<nav class="pc">
+			<div class="nav__logo"><a href="./">DM</a></div>
+			<div class="nav__burger" id="menuOpen">
+				<img src="img/icons/menu.svg" alt="" />
+			</div>
+		</nav>
+
+		<div class="menu" id="menu">
+			<div class="menu__close" id="menuClose">
+				<img src="img/icons/x.svg" alt="" />
+			</div>
+			<ul>
+				<li>
+					<a href="./">
+						domů<span class="primary-color glow"><b>.</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						portfolio<span class="secondary-color glow"
+							><b>.</b></span
+						>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						o mně<span class="primary-color glow"><b>.</b></span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						kontakt<span class="secondary-color glow"
+							><b>.</b></span
+						>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<nav class="mobile">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="img/icons/grid.svg" alt="" />
+						portfolio
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icons/user.svg" alt="" />
+						o mně
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/icons/mail.svg" alt="" />
+						kontakt
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section class="hero">
+			<div class="hero__background">
+				<img src="img/wave1.svg" alt="" />
+				<img src="img/wave2.svg" alt="" />
+			</div>
+			<div class="container">
+				<div class="hero__text">
+					<h1 class="h1">
+						Vše v<br />jednom<span class="primary-color glow"
+							>.</span
+						>
+					</h1>
+					<div class="sub">
+						Student vývoje počítačových technologií
+					</div>
+				</div>
+
+				<div class="hero__work">
+					<div class="work__text">
+						<div>Moje práce</div>
+						<div>
+							<a href="#" class="secondary-color"
+								>- Všechny výtvory</a
+							>
+						</div>
+					</div>
+					<div class="work__slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<a
+									href="http://hbcmalenovice.cz/"
+									target="_blank"
+									class="swiper-slide"
+									style="
+										background-image: url('img/work/hbc-malenovice.png');
+									"
+								>
+									<div class="swiper-slide__text">
+										HBC Malenovice
+									</div>
+								</a>
+								<a
+									href="http://davidmarek.8u.cz/vytvory/omegasoft/"
+									target="_blank"
+									class="swiper-slide"
+									style="
+										background-image: url('img/work/omega-soft.png');
+									"
+								>
+									<div class="swiper-slide__text">
+										Omega Software
+									</div>
+								</a>
+								<a
+									href="http://davidovy-php-ukoly.8u.cz/"
+									target="_blank"
+									class="swiper-slide"
+									style="
+										background-image: url('img/work/php-ukoly.png');
+									"
+								>
+									<div class="swiper-slide__text">
+										Webové experimenty
+									</div>
+								</a>
+								<a
+									href="#"
+									target="_blank"
+									class="swiper-slide"
+								>
+									<div class="swiper-slide__text">
+										Výtvor
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-down">
+				<div class="mousey">
+					<div class="scroller"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__heading">
+					<h2 class="about__h2">
+						o mně<span class="primary-color glow">.</span>
+					</h2>
+				</div>
+				<div class="about__img" id="face-img">
+					<img src="img/face.png" alt="" />
+				</div>
+
+				<div class="about__text">
+					<p>
+						Jsem student prvního ročníku na škole Creative Hill
+						College ve Zlíně, kde studuji obor Vývoj her a
+						multimediálních aplikací.
+					</p>
+
+					<p>
+						Nabízím tvorbu webových stránek, které budou vyhovovat
+						dnešním požadavků náročných uživatelů.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="port"></section>
+
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+		<script>
+			//swiper
+			var swiper = new Swiper(".swiper-container", {
+				slidesPerView: 1.5,
+				spaceBetween: 32,
+				freeMode: true,
+				breakpoints: {
+					576: {
+						slidesPerView: 2.5,
+					},
+					768: {
+						slidesPerView: 3,
+					},
+					992: {
+						slidesPerView: 4,
+					},
+					1200: {
+						slidesPerView: 4,
+					},
+				},
+			});
+
+			//proměné menu control
+			let menuOpen = document.getElementById("menuOpen");
+			let menuClose = document.getElementById("menuClose");
+
+			//otevření menu
+			menuOpen.addEventListener("click", () => {
+				gsap.to("#menu", {
+					duration: 0.5,
+					right: 0,
+					ease: "power2.inOut",
+				});
+			});
+
+			//zavření menu
+			menuClose.addEventListener("click", () => {
+				gsap.to("#menu", {
+					duration: 0.5,
+					right: "-100%",
+					ease: "power3.inOut",
+				});
+			});
+
+			// úvodní fady
+
+			gsap.from(".hero__text > *", {
+				duration: 0.6,
+				x: -32,
+				opacity: 0,
+				delay: 0.3,
+				stagger: 0.15,
+				ease: "power2.inOut",
+			});
+
+			gsap.from(".hero__work", {
+				duration: 0.8,
+				x: -32,
+				opacity: 0,
+				delay: 1,
+				ease: "power2.inOut",
+			});
+
+			//about sekce
+			gsap.registerPlugin(ScrollTrigger);
+			gsap.defaults({ ease: "none" });
+
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: ".about",
+					start: "62% center",
+					end: "120% top",
+					scrub: true,
+					pin: ".about",
+				},
+			})
+				.to(".about__img", {
+					opacity: 0,
+					y: -20,
+					scale: 0.8,
+				})
+				.from(".about__text", {
+					opacity: 0,
+					y: 80,
+				});
+
+			gsap.timeline({
+				scrollTrigger: {
+					trigger: ".hero",
+					start: "top top",
+					end: "80% top",
+					scrub: true,
+				},
+			})
+				.to(".hero__text .h1", {
+					y: -240,
+				})
+				.to(
+					".hero__text .sub",
+					{
+						y: -180,
+					},
+					0
+				)
+				.to(
+					".hero__work .work__text",
+					{
+						y: -140,
+					},
+					0
+				)
+				.to(
+					".hero__work .work_slider",
+					{
+						y: -100,
+					},
+					0
+				);
+		</script>
+	</body>
+</html>
