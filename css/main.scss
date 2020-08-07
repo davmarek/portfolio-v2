@@ -256,7 +256,7 @@ section.hero {
 					//max-width: 250px;
 					position: relative;
 					background: $dark-grey center center / cover;
-					filter: grayscale(0.5);
+					filter: grayscale(0.25);
 
 					color: white;
 					display: flex;
@@ -298,6 +298,7 @@ section.hero {
 						z-index: 2;
 						position: absolute;
 						bottom: 16px;
+						padding-right: 16px;
 						text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 					}
 				}
