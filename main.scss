@@ -76,8 +76,11 @@ nav.pc {
 	.nav__burger {
 		display: flex;
 		justify-content: flex-end;
+
 		width: auto;
 		height: 100%;
+
+		margin-top: 0;
 	}
 }
 

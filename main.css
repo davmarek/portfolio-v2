@@ -76,6 +76,7 @@ nav.pc .nav__burger {
           justify-content: flex-end;
   width: auto;
   height: 100%;
+  margin-top: 0;
 }
 
 #menuOpen,
