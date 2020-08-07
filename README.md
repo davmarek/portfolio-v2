@@ -1,13 +1,23 @@
-# Portfolio V2
+# Portfolio V2 - Developer portfolio 2020
 
-Osobní portfolio 2020
-
-### Úvod
 Toto „repository“ obsahuje všechny soubory mého portfolia.
 Jelikož se jedná o stránku, není potřeba nic instalovat.
 
 ## Použité pluginy
 
-## Autor
+* [GSAP 3](https://greensock.com/)
+* [Swiper.js](https://swiperjs.com/)
 
-**[David Marek](https://github.com/davmarek)**
+## Cíle
+
+* [x] Landing page
+  * [x] Hero
+  * [x] About
+  * [ ] Kontakt
+  * [ ] Footer
+* [ ] Portfolio
+* [ ] Galerie
+* [ ] Kontakt
+  * [ ] Informace
+  * [ ] Nezávazný formulář
+
