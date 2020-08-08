@@ -377,7 +377,8 @@ section.about {
 
 		img {
 			width: 100%;
-			filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3));
+			filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3))
+				brightness(130%);
 		}
 	}
 

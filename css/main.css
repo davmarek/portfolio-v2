@@ -401,8 +401,8 @@ section.about .about__img {
 
 section.about .about__img img {
   width: 100%;
-  -webkit-filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3));
-          filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3)) brightness(130%);
+          filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3)) brightness(130%);
 }
 
 section.about .about__text {
