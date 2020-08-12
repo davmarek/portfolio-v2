@@ -1,0 +1,164 @@
+/*sm 576px
+md 768px
+lg 992px
+xl 1200px
+*/
+@media only screen and (min-width: 576px) {
+	section.about {
+		.about__img {
+			width: 100%;
+			left: 0;
+			img {
+				width: 80%;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.menu {
+		height: 100vh;
+		min-width: unset;
+		width: 100%;
+		right: -100%;
+
+		flex-flow: column-reverse;
+		align-items: center;
+		padding: 32px;
+
+		ul {
+			margin-top: 0;
+			margin-bottom: 24px;
+
+			display: flex;
+
+			font-size: 32px;
+			line-height: 1;
+			text-align: center;
+
+			li a {
+				padding: 0 16px;
+			}
+		}
+	}
+	nav.mobile {
+		display: none;
+		visibility: hidden;
+	}
+
+	nav.pc {
+		position: fixed;
+	}
+
+	section.hero {
+		height: 100vh;
+		.hero__text {
+			padding: 0 0 0;
+		}
+	}
+
+	section.about {
+		.about__img img {
+			width: 70%;
+		}
+	}
+
+	footer {
+		padding: 80px 0 80px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	h1 {
+		font-size: 96px;
+	}
+
+	.container {
+		max-width: 900px;
+	}
+
+	section.hero {
+		.hero__text {
+			.sub {
+				font-size: 24px;
+			}
+		}
+
+		.swiper-container .swiper-slide .swiper-slide__text {
+			font-size: 18px;
+		}
+
+		.scroll-down {
+			display: block;
+			visibility: 1;
+
+			.mousey {
+				width: 3px;
+				padding: 8px 12px;
+				height: 28px;
+
+				.scroller {
+					width: 3px;
+					height: 8px;
+				}
+			}
+		}
+	}
+
+	section.about {
+		.about__img img {
+			width: 55%;
+		}
+
+		.about__text {
+			font-size: 22px;
+		}
+	}
+
+	section.contact {
+		.contact__text {
+			font-size: 22px;
+		}
+
+		.contact__email {
+			font-size: 24px;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+	}
+
+	section.hero {
+		.scroll-down {
+			bottom: 4%;
+			.mousey {
+				width: 3px;
+				padding: 10px 15px;
+				height: 35px;
+
+				.scroller {
+					width: 3px;
+					height: 10px;
+				}
+			}
+		}
+	}
+
+	section:not(.hero) .container {
+		max-width: 1000px;
+	}
+
+	section.about {
+		.about__img img {
+			transform: translateY(-120px);
+			width: 40%;
+		}
+	}
+}
