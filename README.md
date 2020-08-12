@@ -10,9 +10,9 @@ Jelikož se jedná o stránku, není potřeba nic instalovat.
 
 ## Cíle
 
-* [x] Landing page
-  * [x] Hero
-  * [x] About
+* ✅ Landing page
+  * ✅ Hero
+  * ✅ About
   * [ ] Kontakt
   * [ ] Footer
 * [ ] Portfolio
