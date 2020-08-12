@@ -13,11 +13,14 @@ Jelikož se jedná o stránku, není potřeba nic instalovat.
 * [x] Landing page
   * [x] Hero
   * [x] About
-  * [ ] Kontakt
-  * [ ] Footer
+  * [x] Kontakt
+  * [x] Footer
 * [ ] Portfolio
+  * [ ] HBC Malenovice
+  * [ ] WrapStyle
+  * [ ] OmegaSoft
+  * [ ] PHP Experiments
+* [ ] O mně
 * [ ] Galerie
-* [ ] Kontakt
-  * [ ] Informace
-  * [ ] Nezávazný formulář
+* [x] Kontakt
 
