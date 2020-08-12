@@ -24,6 +24,7 @@ body {
 	margin: 0;
 	padding: 0;
 
+	color: white;
 	background-color: $black;
 
 	width: 100%;
@@ -37,6 +38,10 @@ body {
 	padding: 0 32px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+h2 {
+	font-size: 56px;
 }
 
 a {
@@ -56,8 +61,6 @@ nav.pc {
 
 	font-size: 24px;
 	line-height: 1;
-
-	color: white;
 
 	display: flex;
 	justify-content: space-between;
@@ -100,7 +103,6 @@ nav.pc {
 	z-index: 750;
 
 	background-color: $dark-grey;
-	color: white;
 
 	display: flex;
 	flex-flow: column;
@@ -165,13 +167,15 @@ nav.mobile {
 	}
 }
 
+section {
+	margin-top: 0;
+}
+
 section.hero {
 	position: relative;
 
 	height: 91vh;
 	min-height: 650px;
-
-	margin-top: 0;
 
 	display: flex;
 	flex-flow: column;
@@ -197,7 +201,6 @@ section.hero {
 		padding: 10% 0 0;
 
 		.h1 {
-			color: white;
 			font-size: 64px;
 			font-weight: bold;
 			line-height: 1;
@@ -222,8 +225,6 @@ section.hero {
 			font-weight: bold;
 			font-size: 16px;
 
-			color: white;
-
 			div {
 				margin: 0;
 			}
@@ -242,7 +243,6 @@ section.hero {
 					background: $dark-grey center center / cover;
 					filter: grayscale(0.25);
 
-					color: white;
 					display: flex;
 					align-self: flex-end;
 					padding: 120px 16px;
@@ -340,7 +340,6 @@ section.hero {
 
 section.about {
 	background-color: $black;
-	color: white;
 	padding: 80px 0 160px;
 
 	position: relative;
@@ -351,7 +350,6 @@ section.about {
 		z-index: 2;
 
 		.about__h2 {
-			font-size: 56px;
 			margin: 0;
 		}
 	}
@@ -381,9 +379,52 @@ section.about {
 	}
 }
 
-section.port {
-	height: 100vh;
+section.contact {
+	padding: 200px 0;
+
 	background-color: $dark-grey;
+
+	display: grid;
+	place-items: center;
+
+	.contact__text {
+		color: $grey;
+		line-height: 1.8;
+		max-width: 45ch;
+	}
+
+	.contact__email {
+		margin-top: 64px;
+		font-size: 22px;
+		a {
+			color: $secondary;
+			border-bottom: 2px solid $secondary;
+
+			&:focus,
+			&:hover {
+				color: white;
+				border-color: white;
+				outline: none;
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 0;
+	padding: 80px 0 calc(10vh + 80px);
+	text-align: center;
+	color: $grey;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	a {
+		margin: 0 8px;
+	}
+	a:focus svg,
+	a:hover svg {
+		stroke: $primary;
+	}
 }
 
 /*sm 576px
@@ -469,6 +510,10 @@ xl 1200px
 			width: 70%;
 		}
 	}
+
+	footer {
+		padding: 80px 0 80px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -516,6 +561,16 @@ xl 1200px
 			font-size: 22px;
 		}
 	}
+
+	section.contact {
+		.contact__text {
+			font-size: 22px;
+		}
+
+		.contact__email {
+			font-size: 24px;
+		}
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -539,10 +594,11 @@ xl 1200px
 		}
 	}
 
+	section:not(.hero) .container {
+		max-width: 1000px;
+	}
+
 	section.about {
-		.container {
-			max-width: 1000px;
-		}
 		.about__img img {
 			transform: translateY(-120px);
 			width: 40%;

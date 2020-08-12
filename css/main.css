@@ -15,6 +15,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
+  color: white;
   background-color: #141414;
   width: 100%;
   position: relative;
@@ -27,6 +28,10 @@ body {
   padding: 0 32px;
   margin-right: auto;
   margin-left: auto;
+}
+
+h2 {
+  font-size: 56px;
 }
 
 a {
@@ -45,7 +50,6 @@ nav.pc {
   top: 0;
   font-size: 24px;
   line-height: 1;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,7 +94,6 @@ nav.pc .nav__burger {
   right: -50%;
   z-index: 750;
   background-color: #282828;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,11 +175,14 @@ nav.mobile ul li a img {
   margin-bottom: 4px;
 }
 
+section {
+  margin-top: 0;
+}
+
 section.hero {
   position: relative;
   height: 91vh;
   min-height: 650px;
-  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +215,6 @@ section.hero .hero__text {
 }
 
 section.hero .hero__text .h1 {
-  color: white;
   font-size: 64px;
   font-weight: bold;
   line-height: 1;
@@ -233,7 +238,6 @@ section.hero .hero__work .work__text {
           justify-content: space-between;
   font-weight: bold;
   font-size: 16px;
-  color: white;
 }
 
 section.hero .hero__work .work__text div {
@@ -255,7 +259,6 @@ section.hero .hero__work .work__slider .swiper-container .swiper-slide {
   background: #282828 center center/cover;
   -webkit-filter: grayscale(0.25);
           filter: grayscale(0.25);
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,7 +369,6 @@ section.hero .scroll-down .mousey .scroller {
 
 section.about {
   background-color: #141414;
-  color: white;
   padding: 80px 0 160px;
   position: relative;
   overflow: visible !important;
@@ -378,7 +380,6 @@ section.about .about__heading {
 }
 
 section.about .about__heading .about__h2 {
-  font-size: 56px;
   margin: 0;
 }
 
@@ -407,9 +408,52 @@ section.about .about__text {
   line-height: 1.5;
 }
 
-section.port {
-  height: 100vh;
+section.contact {
+  padding: 200px 0;
   background-color: #282828;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section.contact .contact__text {
+  color: #999999;
+  line-height: 1.8;
+  max-width: 45ch;
+}
+
+section.contact .contact__email {
+  margin-top: 64px;
+  font-size: 22px;
+}
+
+section.contact .contact__email a {
+  color: #ffc107;
+  border-bottom: 2px solid #ffc107;
+}
+
+section.contact .contact__email a:focus, section.contact .contact__email a:hover {
+  color: white;
+  border-color: white;
+  outline: none;
+}
+
+footer {
+  margin-top: 0;
+  padding: 80px 0 calc(10vh + 80px);
+  text-align: center;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+footer a {
+  margin: 0 8px;
+}
+
+footer a:focus svg,
+footer a:hover svg {
+  stroke: #1d94d8;
 }
 
 /*sm 576px
@@ -490,6 +534,9 @@ xl 1200px
   section.about .about__img img {
     width: 70%;
   }
+  footer {
+    padding: 80px 0 80px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -524,6 +571,12 @@ xl 1200px
   section.about .about__text {
     font-size: 22px;
   }
+  section.contact .contact__text {
+    font-size: 22px;
+  }
+  section.contact .contact__email {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -542,7 +595,7 @@ xl 1200px
     width: 3px;
     height: 10px;
   }
-  section.about .container {
+  section:not(.hero) .container {
     max-width: 1000px;
   }
   section.about .about__img img {
