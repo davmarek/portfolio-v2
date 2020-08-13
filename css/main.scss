@@ -485,6 +485,13 @@ section.work {
 
 			padding: 8px 24px;
 			border-radius: 8px;
+
+			transition: 500ms;
+		}
+
+		.work__a:focus,
+		.work__a:hover {
+			transform: scale(1.1);
 		}
 	}
 

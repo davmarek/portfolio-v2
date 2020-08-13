@@ -516,6 +516,14 @@ section.work .work__text .work__a {
   letter-spacing: 1px;
   padding: 8px 24px;
   border-radius: 8px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+section.work .work__text .work__a:focus,
+section.work .work__text .work__a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section.work .work__images.desktop-mobile {
