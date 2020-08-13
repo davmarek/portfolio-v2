@@ -246,6 +246,12 @@ section.hero {
 			div {
 				margin: 0;
 			}
+
+			//odkaz na všechny práce
+			a:focus,
+			a:hover {
+				border-bottom: 2px solid $secondary;
+			}
 		}
 
 		.work__slider {
@@ -441,5 +447,103 @@ footer {
 	a:focus svg,
 	a:hover svg {
 		stroke: $primary;
+	}
+}
+
+section.work {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+
+	.work__text {
+		padding: 64px 32px;
+
+		.work__type {
+			text-transform: uppercase;
+			color: $grey;
+		}
+
+		.work__heading {
+			font-size: 36px;
+			margin-top: 8px;
+		}
+
+		.work__desc {
+			line-height: 1.8;
+			max-width: 45ch;
+		}
+
+		.work__a {
+			display: inline-block;
+
+			background-color: $primary;
+			color: white;
+
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+
+			padding: 8px 24px;
+			border-radius: 8px;
+		}
+	}
+
+	.work__images.desktop-mobile {
+		position: relative;
+
+		* {
+			position: absolute;
+		}
+
+		.desktop {
+			bottom: 0;
+			height: 100%;
+			left: 10%;
+		}
+
+		.mobile {
+			bottom: -5%;
+			height: 65%;
+			right: 50%;
+			transform: translateX(80%);
+			filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+		}
+	}
+
+	.work__images.tiles {
+		position: relative;
+
+		* {
+			position: absolute;
+			height: 55%;
+			top: 35%;
+			left: 50%;
+		}
+
+		*:first-child {
+			transform: translate(-75%, -75%);
+		}
+
+		*:last-child {
+			transform: translate(-25%, -25%);
+			filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+		}
+	}
+}
+
+section.work.grey {
+	background-color: $dark-grey;
+}
+
+section.work.hbc {
+	.work__a {
+		background-color: #005f38;
+	}
+}
+
+section.work.omega {
+	.work__a {
+		color: $black;
+		background-color: #ffff01;
 	}
 }

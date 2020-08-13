@@ -263,6 +263,11 @@ section.hero .hero__work .work__text div {
   margin: 0;
 }
 
+section.hero .hero__work .work__text a:focus,
+section.hero .hero__work .work__text a:hover {
+  border-bottom: 2px solid #ffc107;
+}
+
 section.hero .hero__work .work__slider {
   margin: 0;
 }
@@ -472,5 +477,104 @@ footer a {
 footer a:focus svg,
 footer a:hover svg {
   stroke: #1d94d8;
+}
+
+section.work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+section.work .work__text {
+  padding: 64px 32px;
+}
+
+section.work .work__text .work__type {
+  text-transform: uppercase;
+  color: #999999;
+}
+
+section.work .work__text .work__heading {
+  font-size: 36px;
+  margin-top: 8px;
+}
+
+section.work .work__text .work__desc {
+  line-height: 1.8;
+  max-width: 45ch;
+}
+
+section.work .work__text .work__a {
+  display: inline-block;
+  background-color: #1d94d8;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 24px;
+  border-radius: 8px;
+}
+
+section.work .work__images.desktop-mobile {
+  position: relative;
+}
+
+section.work .work__images.desktop-mobile * {
+  position: absolute;
+}
+
+section.work .work__images.desktop-mobile .desktop {
+  bottom: 0;
+  height: 100%;
+  left: 10%;
+}
+
+section.work .work__images.desktop-mobile .mobile {
+  bottom: -5%;
+  height: 65%;
+  right: 50%;
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+  -webkit-filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+}
+
+section.work .work__images.tiles {
+  position: relative;
+}
+
+section.work .work__images.tiles * {
+  position: absolute;
+  height: 55%;
+  top: 35%;
+  left: 50%;
+}
+
+section.work .work__images.tiles *:first-child {
+  -webkit-transform: translate(-75%, -75%);
+          transform: translate(-75%, -75%);
+}
+
+section.work .work__images.tiles *:last-child {
+  -webkit-transform: translate(-25%, -25%);
+          transform: translate(-25%, -25%);
+  -webkit-filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 4px 32px rgba(0, 0, 0, 0.5));
+}
+
+section.work.grey {
+  background-color: #282828;
+}
+
+section.work.hbc .work__a {
+  background-color: #005f38;
+}
+
+section.work.omega .work__a {
+  color: #141414;
+  background-color: #ffff01;
 }
 /*# sourceMappingURL=main.css.map */
