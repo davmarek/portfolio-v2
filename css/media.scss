@@ -14,6 +14,12 @@ xl 1200px
 		}
 	}
 
+	section.about--big {
+		.about__img {
+			width: 80%;
+		}
+	}
+
 	section.work .work__images.desktop-mobile {
 		.desktop {
 			bottom: 0;
@@ -183,6 +189,12 @@ xl 1200px
 		}
 	}
 
+	section.about--big {
+		.about__img {
+			width: 60%;}
+		}
+	}
+
 	section.contact {
 		.contact__text {
 			font-size: 22px;
@@ -263,6 +275,14 @@ xl 1200px
 		.about__img img {
 			transform: translateY(-120px);
 			width: 40%;
+		}
+	}
+
+	section.about--big {
+		.about__img {
+			width: 50%;
+			margin: 16px auto 0;
+
 		}
 	}
 

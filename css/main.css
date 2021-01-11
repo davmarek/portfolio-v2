@@ -431,6 +431,28 @@ section.about .about__text {
   line-height: 1.5;
 }
 
+section.about--big {
+  background-color: #282828;
+  padding: 64px 0 0;
+  overflow: hidden;
+}
+
+section.about--big .about__img {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  text-align: center;
+}
+
+section.about--big .about__img img {
+  -webkit-transform: translateY(24px);
+          transform: translateY(24px);
+  width: 100%;
+  -webkit-filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3)) brightness(130%);
+          filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.3)) brightness(130%);
+}
+
 section.contact {
   padding: 200px 0;
   background-color: #282828;
@@ -584,5 +606,16 @@ section.work.hbc .work__a {
 section.work.omega .work__a {
   color: #141414;
   background-color: #ffff01;
+}
+
+section.work.experiments .work__a {
+  background-color: #ff2525;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffe53b), to(#ff2525));
+  background: linear-gradient(to bottom right, #ffe53b, #ff2525);
+}
+
+body > div:not([class]) {
+  display: none !important;
+  visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */
