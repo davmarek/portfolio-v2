@@ -13,11 +13,6 @@ xl 1200px
   }
   section.about--big .about__img {
     width: 80%;
-    margin: 0 auto;
-  }
-  section.about--big .about__img img {
-    -webkit-transform: translateY(24px);
-            transform: translateY(24px);
   }
   section.work .work__images.desktop-mobile .desktop {
     bottom: 0;
@@ -169,11 +164,6 @@ xl 1200px
   }
   section.about--big .about__img {
     width: 60%;
-    margin: 0 auto;
-  }
-  section.about--big .about__img img {
-    -webkit-transform: translateY(24px);
-            transform: translateY(24px);
   }
   section.contact .contact__text {
     font-size: 22px;
@@ -242,11 +232,7 @@ xl 1200px
   }
   section.about--big .about__img {
     width: 50%;
-    margin: 24px auto 0;
-  }
-  section.about--big .about__img img {
-    -webkit-transform: translateY(24px);
-            transform: translateY(24px);
+    margin: 16px auto 0;
   }
   section.work .work__images.desktop-mobile .desktop {
     bottom: 0;
