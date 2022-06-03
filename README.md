@@ -15,12 +15,12 @@ Jelikož se jedná o stránku, není potřeba nic instalovat.
   * [x] About
   * [x] Kontakt
   * [x] Footer
-* [ ] Portfolio
-  * [ ] HBC Malenovice
-  * [ ] WrapStyle
-  * [ ] OmegaSoft
-  * [ ] PHP Experiments
-* [ ] O mně
+* [x] Portfolio
+  * [x] HBC Malenovice
+  * [x] WrapStyle
+  * [x] OmegaSoft
+  * [x] PHP Experiments
+* [x] O mně
 * [ ] Galerie
 * [x] Kontakt
 
